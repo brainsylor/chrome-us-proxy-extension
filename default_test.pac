@@ -15,7 +15,7 @@ function FindProxyForURL(url, host) {
 	if ((/songza\.com\/(api|advertising)\/|hulu\.com\/mozart\/.*|\.(ico|jpg|png|gif|mp3|js|css|mp4|flv|swf|json)(\?.*)?$|^crackle\.com\/flash\/$/).test(url) || (/^(contactus|presentationtracking|blog|nordicsblog)\.netflix\.com$|^(r|p|t2|ll\.a|t|t-l3|ads|assets|urlcheck)\.hulu\.com$|^(stats|blog|audio.*|const.*|mediaserver.*|cont.*)\.pandora\.com$/).test(host)) {
 		return 'DIRECT';
 	}
-	if ((/(^([\w\.-]+\.)?(hulu|spotify|youtube"netflix|pandora|songza|www\.iheart|www\.crackle)\.com$)/).test(host)) {
+	if ((/(^([\w\.-]+\.)?(hulu|spotify|youtube|ipchicken|netflix|pandora|songza|www\.iheart|www\.crackle)\.com$)/).test(host)) {
 		return proxy;
 	}
 	return 'DIRECT';
